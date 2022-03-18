@@ -4,7 +4,7 @@ import { Dispatch } from 'redux'
 
 type Props = {
   article: IArticle
-  removeArticle: (article: IArticle) => null
+  removeArticle: (article: IArticle) => void
 }
 
 const Article: React.FC<Props> = ({ article, removeArticle }) => {

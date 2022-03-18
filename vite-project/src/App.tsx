@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { useSelector, shallowEqual, useDispatch } from 'react-redux'
-import './styles.css'
+import './App.css'
 
 import { Dispatch } from 'redux'
-import { Article } from './components/Article'
-import { AddArticle } from './components/AddArticle'
+import Article from './components/Article'
+import AddArticle from './components/AddArticle'
 import { addArticle, removeArticle } from './store/actionCreators'
 
 const App: React.FC = () => {

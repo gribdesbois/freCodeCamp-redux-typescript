@@ -23,7 +23,7 @@ const reducer = (
   switch (action.type) {
     case actionTypes.ADD_ARTICLE: {
       const newArticle: IArticle = {
-        id: Math.random(), // not really unique
+        id: Math.random(), // not really unique but it's just an example
         title: action.article.title,
         body: action.article.body,
       }
@@ -32,13 +32,14 @@ const reducer = (
         articles: state.articles.concat(newArticle),
       }
     }
+
     case actionTypes.REMOVE_ARTICLE: {
-      const updatedArticle: IArticle[] = state.articles.filter(
+      const updatedArticles: IArticle[] = state.articles.filter(
         (article) => article.id !== action.article.id
       )
       return {
         ...state,
-        articles: updatedArticle,
+        articles: updatedArticles,
       }
     }
   }
