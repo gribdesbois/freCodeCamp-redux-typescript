@@ -16,6 +16,8 @@ module.exports = {
     semi: 'off',
     'import/prefer-default-export': 'off',
     indent: ['error', 2],
+    indent: ['error', 2, { SwitchCase: 1 }],
+    'no-tabs': ['error', { allowIndentationTabs: true }],
     'import/extensions': [
       'warn',
       'ignorePackages',
