@@ -33,7 +33,7 @@ const AddArticle: React.FC<Props> = ({ saveArticle }) => {
         placeholder="Description"
         onChange={handleArticleData}
       />
-      <button disabled={article === undefined}></button>
+      <button disabled={article === undefined}>Add article</button>
     </form>
   )
 }

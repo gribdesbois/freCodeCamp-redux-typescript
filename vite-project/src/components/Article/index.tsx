@@ -11,6 +11,7 @@ const Article: React.FC<Props> = ({ article, removeArticle }) => {
   const dispatch: Dispatch<any> = useDispatch()
 
   const deleteArticle = useCallback(
+    //! avoid unnecessary re-rendering by memoizing values as dependencies.
     (articleParam: IArticle) => dispatch(removeArticle(articleParam)),
     [dispatch, removeArticle]
   )
