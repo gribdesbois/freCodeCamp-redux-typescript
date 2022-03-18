@@ -1,6 +1,6 @@
 interface IArticle {
   id: number
-  title: number
+  title: string
   body: string
 }
 
